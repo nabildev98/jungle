@@ -5,18 +5,18 @@
     <tr>
       <th scope="col">Info</th>
       <th scope="col">Stat</th>
+      <th scope="col">Link</th>
     <tr>
   <thead>
   <tbody>
     <tr>
       <td># of plant varieties</td>
       <td><%= @admin_product_count %></td>
+      <td><%= link_to 'Admin Products', [:admin, :products], class: 'btn btn success' %></td>
     </tr>
     <tr>
       <td># of categories</td>
       <td><%= @admin_category_count %></td>
-    </tr>
-    <tr>
       <td><%= link_to 'Admin Products', [:admin, :products], class: 'btn btn-success' %></td>
     </tr>
   </tbody>
